@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Clan | Best Café in Vadodara</title>
+    <meta name="description" content="Coffee Clan — Vadodara's cosiest café hangout. Specialty coffee, bubble tea, food, and a games corner. Open till 11 PM. Come for the coffee. Stay for the vibes." />
+    <meta property="og:title" content="Coffee Clan | Best Café in Vadodara" />
+    <meta property="og:description" content="Your go-to café in Vadodara. Specialty drinks, comfort food, and a games corner — all under ₹400." />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&family=Lora:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ════════════ NAV ════════════ -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-inner">
+            <a href="#hero" class="nav-logo">Coffee Clan</a>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#visit">Visit Us</a></li>
+            </ul>
+            <a href="https://www.zomato.com/vadodara/coffee-clan-1-akota/order" target="_blank" rel="noopener" class="nav-cta" aria-label="Order online on Swiggy">Order Online</a>
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+        </div>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-overlay" id="mobileOverlay" role="presentation"></div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 10px;">
+            <span class="nav-logo" style="font-size: 20px;">Coffee Clan</span>
+            <button class="menu-close" id="menuClose" aria-label="Close navigation menu">&#x2715;</button>
+        </div>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit Us</a>
+        <a href="https://www.swiggy.com/" target="_blank" rel="noopener" class="btn-primary" style="text-align:center;margin-top:12px;">Order Online</a>
+    </nav>
+
+    <!-- ════════════ HERO ════════════ -->
+    <section id="hero" aria-label="Hero banner">
+        <div class="hero-bg" role="img" aria-label="Cosy warm café interior at golden hour"></div>
+        <div class="hero-overlay"></div>
+
+        <!-- Steam SVG animation -->
+        <div class="steam-wrap" aria-hidden="true">
+            <svg width="60" height="120" viewBox="0 0 60 120" fill="none">
+      <path d="M30 100 Q20 80 30 60 Q40 40 30 20" stroke="#C8873A" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+      <path d="M45 110 Q35 90 45 70 Q55 50 45 30" stroke="#C8873A" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+      <path d="M15 105 Q5 85 15 65 Q25 45 15 25" stroke="#C8873A" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    </svg>
+        </div>
+
+        <div class="hero-content">
+            <h1>Your Clan Awaits.</h1>
+            <p class="hero-sub">Coffee, food, games, and good company — all in one cozy corner of Vadodara.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary" role="button">View Our Menu →</a>
+                <a href="tel:+917405412238" class="btn-outline" role="button">Reserve a Table</a>
+            </div>
+            <div class="trust-badges">
+                <span>⭐ 4.4 Rating</span>
+                <span>✦ 1,645+ Reviews</span>
+                <span>🕙 Open Until 11 PM</span>
+            </div>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ════════════ ABOUT ════════════ -->
+    <section id="about" aria-label="About Coffee Clan">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text fade-up">
+                    <span class="section-label">— Our Story —</span>
+                    <h2 class="section-heading">More Than Just Coffee</h2>
+                    <p>Coffee Clan was born from a simple idea: that a great café should be more than a quick stop for coffee. It should feel like a <strong>second home</strong> — a place where you can catch up with friends, lose track of time over board
+                        games, or simply unwind with a perfectly brewed cup.</p>
+                    <p>Tucked in Punit Nagar, Vadodara, we serve handcrafted beverages, comfort food, and genuine warmth. Whether you're here for the <strong>Hazelnut Cappuccino</strong>, the <strong>Exotic Maggi</strong>, or just the vibe — you're always
+                        welcome at the Clan.</p>
+                </div>
+                <div class="about-images fade-up" style="transition-delay:0.15s">
+                    <img src="images/cafe_hero.png" alt="Warm and cozy Coffee Clan interior" loading="lazy" />
+                    <img src="images/hazelnut_cappuccino.png" alt="Hazelnut Cappuccino" loading="lazy" />
+                    <img src="images/cheese_paneer_pizza.png" alt="Cheese Paneer Pizza" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ MENU ════════════ -->
+    <section id="menu" aria-label="Menu highlights">
+        <div class="container">
+            <div class="menu-header fade-up">
+                <span class="section-label">— Fan Favourites —</span>
+                <h2 class="section-heading">Crafted for Every Craving</h2>
+                <p style="color:var(--text-muted);max-width:500px;margin:0 auto;">From the first sip to the last bite — your kind of food, done right.</p>
+            </div>
+
+            <div class="menu-grid" data-stagger>
+                <!-- Card 1 -->
+                <div class="menu-card fade-up">
+                    <span class="popular-tag badge-popular">Popular</span>
+                    <img src="images/hazelnut_cappuccino.png" alt="Hazelnut Cappuccino" loading="lazy" />
+                    <div class="menu-card-body">
+                        <h3>Hazelnut Cappuccino</h3>
+                        <p>Rich espresso with toasted hazelnut cream</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹180</span>
+                            <span style="font-size:20px">☕</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="menu-card fade-up">
+                    <img src="images/lemon_bubble_tea.png" alt="Lemon Bubble Tea" loading="lazy" />
+                    <div class="menu-card-body">
+                        <h3>Bubble Tea – Lemon</h3>
+                        <p>Refreshing citrus burst with pearls</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹200</span>
+                            <span style="font-size:20px">🧋</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="menu-card fade-up">
+                    <span class="popular-tag badge-popular">Popular</span>
+                    <img src="images/chocolate_shake.png" alt="Classic Chocolate Shake" loading="lazy" />
+                    <div class="menu-card-body">
+                        <h3>Classic Chocolate Shake</h3>
+                        <p>Thick, indulgent, unapologetically rich</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹220</span>
+                            <span style="font-size:20px">🥤</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="menu-card fade-up">
+                    <img src="images/exotic_maggi.png" alt="Exotic Maggi" loading="lazy" />
+                    <div class="menu-card-body">
+                        <h3>Exotic Maggi</h3>
+                        <p>Loaded café-style Maggi with a twist</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹150</span>
+                            <span style="font-size:20px">🍜</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="menu-card fade-up">
+                    <img src="images/arrabbiata_pasta.png" alt="Arrabbiata Pasta" loading="lazy" />
+                    <div class="menu-card-body">
+                        <h3>Arrabbiata Pasta</h3>
+                        <p>Spicy tomato pasta, Italian-inspired</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹260</span>
+                            <span style="font-size:20px">🍝</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="menu-card fade-up">
+                    <img src="images/cheese_nuggets.png" alt="Cheese Nuggets" loading="lazy" />
+                    <div class="menu-card-body">
+                        <h3>Cheese Nuggets</h3>
+                        <p>Crispy, gooey, straight-up addictive</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹180</span>
+                            <span style="font-size:20px">🧀</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="menu-card fade-up">
+                    <span class="popular-tag badge-popular">Popular</span>
+                    <img src="images/sandwich_cubano.png" alt="Sandwich Cubano" loading="lazy" />
+                    <div class="menu-card-body">
+                        <h3>Sandwich Cubano</h3>
+                        <p>Grilled pressed sandwich, café-style</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹220</span>
+                            <span style="font-size:20px">🥪</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="menu-card fade-up">
+                    <img src="images/cheese_paneer_pizza.png" alt="Cheese Paneer Pizza" loading="lazy" />
+                    <div class="menu-card-body">
+                        <h3>Cheese Paneer Pizza</h3>
+                        <p>Stone-baked with generous paneer topping</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹320</span>
+                            <span style="font-size:20px">🍕</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cta fade-up">
+                <a href="https://www.zomato.com/vadodara/coffee-clan-1-akota/menu" target="_blank" rel="noopener" aria-label="View full menu on Swiggy">See Full Menu →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ WHY US ════════════ -->
+    <section id="whyus" aria-label="Why choose Coffee Clan">
+        <div class="container">
+            <div class="whyus-header fade-up">
+                <span class="section-label">— Why Coffee Clan —</span>
+                <h2 class="section-heading">What Makes Us Different</h2>
+            </div>
+            <div class="features-grid" data-stagger>
+                <div class="feature-card fade-up">
+                    <div class="feature-icon">☕</div>
+                    <h3>Specialty Drinks</h3>
+                    <p>From handcrafted espresso to exotic bubble teas, every sip is intentional.</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <div class="feature-icon">🎲</div>
+                    <h3>Games Corner</h3>
+                    <p>Board games, good company, and zero awkward silences. Your turn.</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <div class="feature-icon">🌙</div>
+                    <h3>Open Till 11 PM</h3>
+                    <p>Your late-night cravings have a home. We'll keep the lights on.</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <div class="feature-icon">🛵</div>
+                    <h3>No-Contact Delivery</h3>
+                    <p>Order from your couch. We'll handle the rest, all the way to your door.</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <div class="feature-icon">🍽️</div>
+                    <h3>Dine-In &amp; Takeaway</h3>
+                    <p>Sit back or dash — your choice, your comfort, always.</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <div class="feature-icon">💸</div>
+                    <h3>Great Value</h3>
+                    <p>Premium café experience, everyday prices. All-in under ₹400 per person.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ REVIEWS ════════════ -->
+    <section id="reviews" aria-label="Customer reviews">
+        <div class="container">
+            <div class="reviews-header fade-up">
+                <span class="section-label">— What People Are Saying —</span>
+                <h2 class="section-heading">⭐ 4.4 — Loved by 1,645+ Guests</h2>
+            </div>
+            <div class="badges-wrap fade-up">
+                <div class="google-badge">
+                    <span class="rating-big">4.4</span>
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <div class="review-count">1,645 Google Reviews</div>
+                    </div>
+                    <a href="https://www.google.com/maps/place/Coffee+Clan/@22.3028836,73.1678508,17z/data=!3m1!4b1!4m6!3m5!1s0x395fc8a679123145:0x5610ca681240ec73!8m2!3d22.3028836!4d73.1678508!16s%2Fg%2F11dx933fhq" target="_blank" rel="noopener" aria-label="Read more reviews on Google Maps">Read More on Google →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-wrapper" aria-label="Customer review carousel">
+            <div class="carousel-track">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"We had Exotic Maggi, Bubble Tea (Lemon), and Hazelnut Cappuccino. The ambiance was warm and cozy — perfect for a hangout."</p>
+                    <div class="review-author">Nikita D. &nbsp;·&nbsp; <span>Google Review</span></div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Great place, great food quality and great service. We keep coming back for the vibe — it never gets old."</p>
+                    <div class="review-author">Local Guide &nbsp;·&nbsp; <span>Google Review</span></div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"The first time we ordered a burrito, a burger, fries, and an Oreo shake — everything was solid. Loved the atmosphere too."</p>
+                    <div class="review-author">Regular Guest &nbsp;·&nbsp; <span>Google Review</span></div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Really nice, cozy feel. The bubble tea and games corner make it stand out from other cafés in Vadodara."</p>
+                    <div class="review-author">Khushbu C. &nbsp;·&nbsp; <span>Google Review</span></div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">"Chill vibe, great coffee, good portions. Perfect place to come with your crew and just waste a beautiful evening."</p>
+                    <div class="review-author">Priya M. &nbsp;·&nbsp; <span>Google Review</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ VISIT ════════════ -->
+    <section id="visit" aria-label="Find us">
+        <div class="container">
+            <div class="visit-header fade-up">
+                <span class="section-label">— Come Find Us —</span>
+                <h2 class="section-heading">Find Your Table</h2>
+            </div>
+            <div class="visit-grid">
+                <div class="info-cards">
+                    <div class="info-card fade-up">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Shivang Complex, Shop No. 4-5-6, Urmi Road, Opp Gail Office, Punit Nagar, Vadodara – 390007</p>
+                        </div>
+                    </div>
+                    <div class="info-card fade-up">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+917405412238" aria-label="Call Coffee Clan">+91 74054 12238</a>
+                        </div>
+                    </div>
+                    <div class="info-card fade-up">
+                        <div class="info-icon">🕐</div>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Open Daily &nbsp;·&nbsp; Closes 11 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-card fade-up">
+                        <div class="info-icon">🛵</div>
+                        <div>
+                            <h4>Delivery</h4>
+                            <a href="https://www.zomato.com/vadodara/coffee-clan-1-akota/order" target="_blank" rel="noopener" aria-label="Order on zomato">Order on Zomato →</a>
+                        </div>
+                    </div>
+                    <div class="visit-ctas fade-up">
+                        <a href="https://www.google.com/maps/place/Coffee+Clan/@22.3028836,73.1678508,17z/data=!3m1!4b1!4m6!3m5!1s0x395fc8a679123145:0x5610ca681240ec73!8m2!3d22.3028836!4d73.1678508!16s%2Fg%2F11dx933fhq" target="_blank" rel="noopener" class="btn-primary" aria-label="Get directions to Coffee Clan">Get Directions →</a>
+                        <a href="tel:+917405412238" class="btn-outline" aria-label="Call Coffee Clan now">Call Now</a>
+                    </div>
+                </div>
+
+                <div class="map-container fade-up">
+                    <iframe title="Coffee Clan location on Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.2!2d73.1678508!3d22.3028836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8a679123145%3A0x5610ca681240ec73!2sCoffee+Clan!5e0!3m2!1sen!2sin!4v1710000000000"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Google Maps showing Coffee Clan location">
+        </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ FOOTER ════════════ -->
+    <footer id="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="nav-logo">Coffee Clan</span>
+                    <p>Come for the coffee. Stay for the vibes.</p>
+                </div>
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#visit">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-social">
+                    <h5>Connect</h5>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Coffee Clan on Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://www.google.com/maps/place/Coffee+Clan/@22.3028836,73.1678508,17z/data=!3m1!4b1!4m6!3m5!1s0x395fc8a679123145:0x5610ca681240ec73!8m2!3d22.3028836!4d73.1678508!16s%2Fg%2F11dx933fhq" target="_blank" rel="noopener" aria-label="Coffee Clan on Google Maps">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </a>
+                    </div>
+                    <a href="https://www.zomato.com/vadodara/coffee-clan-1-akota" target="_blank" rel="noopener" class="swiggy-btn" aria-label="Order on Zomato">
+          🛵 &nbsp;Order on Zomato
+        </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Coffee Clan &nbsp;·&nbsp; Vadodara, Gujarat &nbsp;·&nbsp; All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
